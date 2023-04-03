@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Online school</h1>
+        <h1>Online school Github Check Applicatie</h1>
     </header>
     <main>
         <div class="courses">
