@@ -8,6 +8,9 @@
 </head>
 <body>
     <header>
+        <nav>
+            <a href="/courses/create">Vak aanmaken</a>
+        </nav>
         <h1>Online school Github Check Applicatie</h1>
     </header>
     <main>
