@@ -10,6 +10,7 @@
     <header>
         <nav>
             <a href="/courses/create">Vak aanmaken</a>
+            <a href="/lokalen/create">Lokaal aanmaken</a>
         </nav>
         <h1>Online school Github Check Applicatie</h1>
     </header>
