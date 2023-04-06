@@ -28,6 +28,7 @@ class LokalenController extends Controller
         ]);
 
         // redirect de gebruiker terug naar de homepage
+        return redirect('/');
 
 
     }
