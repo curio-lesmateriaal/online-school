@@ -9,4 +9,8 @@ class LokalenController extends Controller
     public function create() {
         return view('lokalen.create');
     }
+
+    public function store() {
+        return 'test';
+    }
 }

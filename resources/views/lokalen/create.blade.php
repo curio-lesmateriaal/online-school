@@ -9,7 +9,8 @@
 <body>
 
     <h1>Nieuw Lokaal aanmaken</h1>
-    <form action="">
+    <form action="/lokalen" method="POST">
+        @csrf
         <div class="form-group">
             <label for="klaslokaal">Naam klaslokaal</label>
             <input type="text" name="name" id="klaslokaal">
