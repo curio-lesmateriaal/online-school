@@ -20,9 +20,7 @@ class CoursesController extends Controller
             'docent' => $request->docent,
             'description' => $request->description
         ]);
-
         return redirect('/');
-
     }
 
 }
