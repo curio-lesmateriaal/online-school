@@ -12,12 +12,13 @@ class PagesController extends Controller
         $courses = DB::table('courses')
             ->get();
 
-
+        $studenten = DB::table('students')->get();
         $lokalen = DB::table('lokalen')->get();
 
         return view('welcome', [
             'courses' => $courses,
-            'lokalen' => $lokalen
+            'lokalen' => $lokalen,
+            'studenten' => $studenten
         ]);
     }
 
