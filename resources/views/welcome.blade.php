@@ -12,7 +12,7 @@
             <a href="/courses/create">Vak aanmaken</a>
             <a href="/lokalen/create">Lokaal aanmaken</a>
         </nav>
-        <h1>Online school Applicatie aangepast door Fedde</h1>
+        <h1>Online school Applicatie</h1>
     </header>
     <main>
         <div class="courses">
