@@ -21,3 +21,4 @@ Route::get('/courses/create', [CoursesController::class, 'create']);
 Route::get('/lokalen/create', [LokalenController::class, 'create']);
 
 Route::post('/lokalen', [LokalenController::class, 'store']);
+Route::post('/courses', [CoursesController::class, 'store']);

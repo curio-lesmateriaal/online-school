@@ -10,7 +10,6 @@ class PagesController extends Controller
 
     public function home() {
         $courses = DB::table('courses')
-            ->where('docent', 'Wicher Hulzebosch')
             ->get();
 
 
