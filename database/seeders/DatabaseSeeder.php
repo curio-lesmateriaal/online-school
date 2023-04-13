@@ -41,6 +41,15 @@ class DatabaseSeeder extends Seeder
         ]
         );
 
+        DB::table('students')->insert([
+            'voornaam' => 'Milan',
+            'achternaam' => 'Swagemakers',
+            'nummer' => '290549',
+            'klas'  => 'TTB4-SSD2H',
+            'email' => 'D290549@edu.curio.nl',
+            'mentor' => 'Fedde van Gils'
+        ]);
+
 
 
 
