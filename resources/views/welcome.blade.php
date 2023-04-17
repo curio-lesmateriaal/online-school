@@ -28,7 +28,7 @@
                     <h2>Studenten van onze online school</h2>
                     <ul class="list-group">
                         @foreach($studenten as $student)
-                            <li class="list-group-item">{{$student->voornaam}} {{ $student->tussenvoegsel }} {{ $student->achternaam }} - {{$student->nummer}}</li>
+                            <li class="list-group-item"><a href="/students/{{$student->id}}">{{$student->voornaam}} {{ $student->tussenvoegsel }} {{ $student->achternaam }} - {{$student->nummer}}</a></li>
                         @endforeach
                     </ul>
                 </div>

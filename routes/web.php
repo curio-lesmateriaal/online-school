@@ -18,10 +18,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PagesController::class, 'home']);
-Route::get('/courses/create', [CoursesController::class, 'create']);
-Route::get('/lokalen/create', [LokalenController::class, 'create']);
-Route::get('/students/create', [StudentsController::class, 'create']);
 
-Route::post('/lokalen', [LokalenController::class, 'store']);
+Route::get('/courses/create', [CoursesController::class, 'create']);
 Route::post('/courses', [CoursesController::class, 'store']);
+
+Route::get('/lokalen/create', [LokalenController::class, 'create']);
+Route::post('/lokalen', [LokalenController::class, 'store']);
+
+Route::get('/students/create', [StudentsController::class, 'create']);
+Route::get('/students/{id}', [StudentsController::class, 'show']);
 Route::post('/students', [StudentsController::class, 'store']);
+

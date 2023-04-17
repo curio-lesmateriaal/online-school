@@ -11,6 +11,7 @@
     <div class="container">
         <header>
             <nav>
+                <a href="/">Home</a>
                 <a href="/courses/create">Vak aanmaken</a>
                 <a href="/lokalen/create">Lokaal aanmaken</a>
                 <a href="/students/create">Student aanmaken</a>

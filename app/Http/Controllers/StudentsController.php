@@ -12,6 +12,17 @@ class StudentsController extends Controller
         return view('students.create');
     }
 
+    public function show($id) {
+        $student = \DB::table('students')
+                        ->where('id', $id)
+                        ->first();
+
+        return view('students/show', [
+            'student' => $student
+        ]);
+
+    }
+
     public function store(Request $request)
     {
         \DB::table('students')->insert([
