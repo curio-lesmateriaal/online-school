@@ -13,6 +13,7 @@
             <nav>
                 <a href="/courses/create">Vak aanmaken</a>
                 <a href="/lokalen/create">Lokaal aanmaken</a>
+                <a href="/students/create">Student aanmaken</a>
             </nav>
             <h1>Online school Applicatie</h1>
         </header>
