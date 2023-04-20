@@ -37,4 +37,13 @@ class StudentsController extends Controller
 
         return redirect('/');
     }
+
+    public function destroy($id) {
+        $student = \DB::table('students')
+                        ->where('id', $id)
+                        ->delete();
+
+
+        return redirect('/');
+    }
 }

@@ -29,5 +29,6 @@ Route::post('/lokalen', [LokalenController::class, 'store']);
 
 Route::get('/students/create', [StudentsController::class, 'create']);
 Route::get('/students/{id}', [StudentsController::class, 'show']);
+Route::delete('/students/{id}', [StudentsController::class, 'destroy']);
 Route::post('/students', [StudentsController::class, 'store']);
 

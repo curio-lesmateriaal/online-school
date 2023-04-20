@@ -9,4 +9,13 @@
 
     <dt>Mentor:</dt>
     <dd>{{$student->mentor }}</dd>
+
+    <hr>
+
+    <form action="/students/{{$student->id}}" method="POST">
+        @method('DELETE')
+        @csrf
+        <input type="submit" value="Verwijderen" class="btn btn-danger">
+    </form>
+
 @endsection
