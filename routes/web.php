@@ -24,6 +24,7 @@ Route::get('/courses/{id}', [CoursesController::class, 'show']);
 Route::post('/courses', [CoursesController::class, 'store']);
 
 Route::get('/lokalen/create', [LokalenController::class, 'create']);
+Route::get('/lokalen/{id}', [LokalenController::class, 'show']);
 Route::post('/lokalen', [LokalenController::class, 'store']);
 
 Route::get('/students/create', [StudentsController::class, 'create']);

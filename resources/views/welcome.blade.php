@@ -16,11 +16,13 @@
                     <ul class="list-group">
                         @foreach($lokalen as $lokaal)
                             <li class="list-group-item">
-                                {{ $lokaal->name }} - capaciteit: {{ $lokaal->capacity }} personen
-                                <br>
-                                @if ($lokaal->has_screen)
-                                    scherm aanwezig
-                                @endif
+                                <a href="/lokalen/{{$lokaal->id}}">
+                                    {{ $lokaal->name }} - capaciteit: {{ $lokaal->capacity }} personen
+                                    <br>
+                                    @if ($lokaal->has_screen)
+                                        scherm aanwezig
+                                    @endif
+                                </a>
                             </li>
                         @endforeach
                     </ul>

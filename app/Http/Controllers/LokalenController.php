@@ -10,6 +10,16 @@ class LokalenController extends Controller
         return view('lokalen.create');
     }
 
+    public function show($id) {
+        $lokaal = \DB::table('lokalen')
+                    ->where('id', $id)
+                    ->first();
+
+        return view('lokalen.show', [
+            'lokaal' => $lokaal
+        ]);
+    }
+
     public function store(Request $request) {
         // show the data that comes from the form:
         // dd( $request->all() );
