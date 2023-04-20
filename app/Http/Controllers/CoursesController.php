@@ -12,6 +12,16 @@ class CoursesController extends Controller
         return view('courses.create');
     }
 
+    public function show($id) {
+        $course = \DB::table('courses')
+                    ->where("id", $id)
+                    ->first();
+
+        return view('courses.show', [
+            'course' => $course
+        ]);
+    }
+
     public function store(Request $request) {
         // dd( $request->all() );
 

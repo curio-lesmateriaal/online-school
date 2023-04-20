@@ -6,7 +6,7 @@
                     <h2>Vakken van de online school:</h2>
                     <ul class="list-group">
                         @foreach($courses as $course)
-                            <li class="list-group-item"> {{ $course->name }} - {{ $course->description }} </li>
+                            <li class="list-group-item"><a href="/courses/{{$course->id}}"> {{ $course->name }} - {{ $course->description }} </a> </li>
                         @endforeach
                     </ul>
                 </div>
